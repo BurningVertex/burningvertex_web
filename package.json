@@ -12,11 +12,13 @@
     "iconify": "^1.4.0",
     "node-sass": "^7.0.3",
     "react": "^18.2.0",
+    "react-cookie-consent": "^8.0.1",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0",
+    "react-icons": "^4.11.0",
     "react-responsive": "^9.0.2",
     "react-scripts": "5.0.1",
     "react-tooltip": "^5.9.1",
+    "sanity": "^3.17.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -44,6 +46,6 @@
     ]
   },
   "devDependencies": {
-    "@iconify/react": "^4.1.0"
+    "@iconify/react": "^4.1.1"
   }
 }

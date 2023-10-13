@@ -170,7 +170,7 @@
   .app__navigation-dot {
     width: 10px;
     height: 10px;
-    border-radius: 50%;
+    border-radius: 0%; //50% for circles!
     background-color: #cbcbcb;
     margin: 0.5rem;
 

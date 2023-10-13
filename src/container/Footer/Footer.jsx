@@ -68,7 +68,7 @@ const Footer = () => {
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
           <FaWhatsapp icon="fa-brands fa-whatsapp" />
-          <a href="tel:+31636232821" className="p-text">     +31636232821</a>
+          <a href="tel:+31616931592" className="p-text">     +31616931592</a>
         </div>
       </div>
       {!isFormSubmitted ? (

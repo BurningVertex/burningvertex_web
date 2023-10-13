@@ -22,10 +22,12 @@ import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
 
 import profile from '../assets/profile.png';
-import bvlogonb from '../assets/bvlogonb.png';
-import bvlogonbsmaller from '../assets/bvlogonbsmaller.png';
+import bvlogo from '../assets/bvlogo.png';
 import circle from '../assets/circle.svg';
-import logo from '../assets/logo.png';
+import navlogogif from '../assets/navlogo.gif';
+import navlogo from '../assets/navlogo.png';
+import navlogopurple from '../assets/navlogopurple.png';
+import navlogoblue from '../assets/navlogoblue.png';
 
 import wordpress from '../assets/wordpress.png';
 import vscode from '../assets/vscode.png';
@@ -56,9 +58,11 @@ export default {
   about04,
   profile,
   circle,
-  logo,
-  bvlogonb,
-  bvlogonbsmaller,
+  navlogo,
+  navlogopurple,
+  navlogoblue,
+  navlogogif,
+  bvlogo,
   adobephotoshop,
   wordpress,
   vscode,

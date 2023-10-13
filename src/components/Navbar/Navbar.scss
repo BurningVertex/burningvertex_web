@@ -36,7 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  padding-right: 11rem; //navbar links location padding
   list-style: none;
 
   li {
@@ -49,7 +49,7 @@
       width: 5px;
       height: 5px;
       background: transparent;
-      border-radius: 50%;
+      border-radius: 0%; //original 50% for circles
 
       margin-bottom: 5px;
     }
@@ -61,6 +61,7 @@
 
       text-transform: uppercase;
       font-weight: 500;
+      font-size: medium; //change navbar text size
 
       transition: all 0.3s ease-in-out;
 
@@ -84,7 +85,7 @@
 .app__navbar-menu {
   width: 35px;
   height: 35px;
-  border-radius: 50%;
+  border-radius: 0%; //mobile menu button 50% for circle
   position: relative;
 
   display: flex;
@@ -116,7 +117,7 @@
     align-items: flex-end;
     flex-direction: column;
     
-    background: url('../../assets/bgWhite.png');
+    background: url('../../assets/bgcubesmobIMG.png'); //this changes mobile menu background 
     background-color: var(--white-color);
     background-size: cover;
     background-repeat: repeat;
@@ -152,6 +153,7 @@
           font-size: 1rem;
           text-transform: uppercase;
           font-weight: 500;
+          
 
           transition: all 0.3s ease-in-out;
 

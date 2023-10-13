@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsLinkedin, BsTwitter, BsInstagram } from 'react-icons/bs';
+import { BsLinkedin, BsInstagram } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
 import { Icon } from '@iconify/react';
 
@@ -9,10 +9,11 @@ const SocialMedia = () => (
       <BsLinkedin onClick={()=> window.open("https://www.linkedin.com/in/kjgreen86", "_blank")}/>
     </div>
     <div>
-      <BsTwitter onClick={()=> window.open("https://www.twitter.com/burningvertex", "https://www.twitter.com/burningvertex")}/>
+    <Icon icon="simple-icons:x" onClick={()=> window.open("https://www.x.com/burningvertex", "_blank")}/>
+      {/*<BsX onClick={()=> window.open("https://www.twitter.com/burningvertex", "https://www.twitter.com/burningvertex")}/>*/}
     </div>
     <div>
-      <BsInstagram />
+      <BsInstagram  />
     </div>
     {/*<div>
     <Icon icon="simple-icons:fiverr" onClick={()=> window.open("https://www.fiverr.com/burningvertex", "_blank")}/>
