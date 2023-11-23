@@ -13,7 +13,7 @@ const SocialMedia = () => (
       {/*<BsX onClick={()=> window.open("https://www.twitter.com/burningvertex", "https://www.twitter.com/burningvertex")}/>*/}
     </div>
     <div>
-      <BsInstagram  />
+    <BsInstagram onClick={()=> window.open("https://www.instagram.com/burningvertex", "_blank")}/>
     </div>
     {/*<div>
     <Icon icon="simple-icons:fiverr" onClick={()=> window.open("https://www.fiverr.com/burningvertex", "_blank")}/>
