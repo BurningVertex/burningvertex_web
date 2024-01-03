@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
-
 import { images } from '../../constants';
 import './Navbar.scss';
+
+
+import { BsLinkedin, BsInstagram } from 'react-icons/bs';
+import { FaFacebookF } from 'react-icons/fa';
+import { Icon } from '@iconify/react';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -52,6 +56,15 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+
+           {/* <ul>
+            <span>Follow Us</span>
+              <li>
+              <BsLinkedin onClick={()=> window.open("https://www.linkedin.com/in/kjgreen86", "_blank")}/>
+              <Icon icon="simple-icons:x" onClick={()=> window.open("https://www.x.com/burningvertex", "_blank")}/>
+              <BsInstagram onClick={()=> window.open("https://www.instagram.com/burningvertex", "_blank")}/>
+              </li>
+        </ul>*/}
           </motion.div>
         )}
       </div>
