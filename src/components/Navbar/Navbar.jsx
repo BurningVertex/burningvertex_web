@@ -5,7 +5,7 @@ import { images } from '../../constants';
 import './Navbar.scss';
 
 
-import { BsLinkedin, BsInstagram } from 'react-icons/bs';
+import { BsLinkedin, BsInstagram, BsThreadsFill } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
 import { Icon } from '@iconify/react';
 
@@ -22,6 +22,14 @@ const Navbar = () => {
       <div className="app__navbar-logo">
         <img src={images.navlogoblue} alt="navlogo" />
       </div>
+
+      {/*<ul className="app__navbarsocials">
+      
+              <BsLinkedin onClick={()=> window.open("https://www.linkedin.com/in/kjgreen86", "_blank")}/>
+              <Icon icon="simple-icons:x" onClick={()=> window.open("https://www.x.com/burningvertex", "_blank")}/>
+              <BsInstagram onClick={()=> window.open("https://www.instagram.com/burningvertex", "_blank")}/>          
+      </ul>*/}
+
       <ul className="app__navbar-links">
         {['home', 'services', 'clients', 'skills', 'testimonial', 'contact'].map((item) => ( //services and clients = about and work in db
           <li className="app__flex p-text" key={`link-${item}`}>
@@ -56,15 +64,17 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-
-           {/* <ul>
-            <span>Follow Us</span>
-              <li>
+            
+          { <ul className="app__navbar-socials">
+            <li className="app__flex p-text">
+            {/*<span>Follow</span>
+            <span>:</span>*/}
               <BsLinkedin onClick={()=> window.open("https://www.linkedin.com/in/kjgreen86", "_blank")}/>
               <Icon icon="simple-icons:x" onClick={()=> window.open("https://www.x.com/burningvertex", "_blank")}/>
               <BsInstagram onClick={()=> window.open("https://www.instagram.com/burningvertex", "_blank")}/>
+              <BsThreadsFill onClick={()=> window.open("https://www.threads.net/burningvertex", "_blank")}/>
               </li>
-        </ul>*/}
+        </ul>}
           </motion.div>
         )}
       </div>
