@@ -13,12 +13,25 @@ const Skills = () => {
   const [skills, setSkills] = useState([]);
   const isMobile = useMediaQuery({ query: "(max-width:700px)" });
 
-  useEffect(() => {
-    const query = '*[_type == "experiences"] | order(year desc)'; //need this!
-    const skillsQuery = '*[_type == "skills"]';
-    client.fetch(query).then((data) => setExperiences(data));
-    client.fetch(skillsQuery).then((data) => setSkills(data));
-  }, []);
+ useEffect(() => {
+  const experiencesQuery = `*[_type == "experiences"] | order(year desc){
+    year,
+    works[]{
+      name,
+      company,
+      desc
+    }
+  }`;
+
+  const skillsQuery = `*[_type == "skills"]{
+    name,
+    bgColor,
+    icon
+  }`;
+
+  client.fetch(experiencesQuery).then((data) => setExperiences(data));
+  client.fetch(skillsQuery).then((data) => setSkills(data));
+}, []);
   return (
     <>
       <h2 className="head-text">Things <span>We Know</span> <br />And Did  <span>Previously</span></h2>

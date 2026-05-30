@@ -16,19 +16,22 @@ const Testimonial = () => {
     setCurrentIndex(index);
   };
 
-  useEffect(() => {
-    const query = '*[_type == "testimonials"]';
-    const brandsQuery = '*[_type == "brands"]';
+useEffect(() => {
+  const testimonialsQuery = `*[_type == "testimonials"]{
+    name,
+    company,
+    feedback,
+    imgurl
+  }`;
 
-    client.fetch(query).then((data) => {
-      setTestimonials(data);
-    });
+  const brandsQuery = `*[_type == "brands"]{
+    name,
+    imgUrl
+  }`;
 
-    client.fetch(brandsQuery).then((data) => {
-      setBrands(data);
-    });
-  }, []);
-
+  client.fetch(testimonialsQuery).then((data) => setTestimonials(data));
+  client.fetch(brandsQuery).then((data) => setBrands(data));
+}, []);
   return (
     <>
       {testimonials.length && (
